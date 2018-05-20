@@ -1,14 +1,21 @@
 
-public abstract class GenericAnimalWithFeathers extends GenericAnimal {
-	
-	private String featherSize;
+public class GenericAnimalWithFeathers extends GenericAnimal {
 
-	public String getFeatherSizeColor() {
+	private String featherSize = null;
+
+	public GenericAnimalWithFeathers() {
+		setRace("volatile");
+		setCanFly(true);
+	}
+	
+	public String getFeatherSize() {
 		return featherSize;
 	}
 
-	public void setFeatherSizeColor(String furColor) {
-		this.featherSize = furColor;
+	public void setFeatherSize(String featherSize) {
+		this.featherSize = featherSize;
 	}
+	
+	
 
 }
